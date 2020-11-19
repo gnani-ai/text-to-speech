@@ -9,5 +9,5 @@ module.exports = {
     NAME:'', //Add your name here
     SSMLGENDER:'', //Add your ssml_gender here
     AUDIOENCODING:'' ,//Add your audio_encoding here
-    CERT_FILE_PATH: './cert.pem' //update the chain.pem file by replacing it with new cert.pem file
+    CERT_FILE_PATH: './config/cert.pem' //update the chain.pem file by replacing it with new cert.pem file
 }
