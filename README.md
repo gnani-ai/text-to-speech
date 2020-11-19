@@ -78,8 +78,8 @@ Update the user.config file with all these parameters.
 Here are the list of sample codes.
 
 REST Codes
-- [NodeJs](https://github.com/gnani-ai/text-to-speech/tree/main/rest-codes/Nodejs-Client)
-- [Python](https://github.com/gnani-ai/text-to-speech/tree/main/rest-codes/Python-Client)
+- [NodeJs](https://github.com/gnani-ai/text-to-speech/tree/master/rest-codes/Nodejs-Client)
+- [Python](https://github.com/gnani-ai/text-to-speech/tree/master/rest-codes/Python-Client)
 
 ### Support or Contact
 
