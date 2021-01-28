@@ -47,6 +47,7 @@ if __name__ == '__main__':
     name = parser.get('TTS_REQUEST_BODY', 'NAME')
     ssml_gender = parser.get('TTS_REQUEST_BODY', 'SSMLGENDER')
     audio_encoding = parser.get('TTS_REQUEST_BODY', 'AUDIOENCODING')
+    sample_rate = parser.get('TTS_REQUEST_BODY', 'SAMPLERATE')
 
     """SSL Configuration goes here.
     Paste the 'chain.pem' mailed to you in the root directory.
@@ -61,7 +62,7 @@ if __name__ == '__main__':
     payload = {"input": {"text": text},
                "voice": {"languageCode": lang_code, "name": name,
                          "ssmlGender": ssml_gender},
-               "audioConfig": {"audioEncoding": audio_encoding}}
+               "audioConfig": {"audioEncoding": audio_encoding,"sampleRate":sample_rate}}
 
     response = tts_service(headers, payload)
     logger.info("Response from tts server : {}".format(response))

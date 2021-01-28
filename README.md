@@ -29,6 +29,7 @@ Update the user.config file with all these parameters.
     name            : gnani
     ssmlgender      : FEMALE
     audioencoding   : pcm16 
+    samplertae      : 8000
 ```
 
 * After updating the user.config file you can run the particular client and get the response data. 
@@ -57,7 +58,8 @@ Update the user.config file with all these parameters.
                          "ssmlGender":string <ssml_gender of user>
               },
                "audioConfig": {
-                          "audioEncoding": string <audio_encoding of the response string>
+                          "audioEncoding": string <audio_encoding of the response string>,
+                          "sampleRate" : integet <samplerate of the response audio >" 
                }
         }
 ```
