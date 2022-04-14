@@ -2,6 +2,252 @@
 
 This document describes the Gnani’s TTS API that is used to get the TTS audio data.
 
+## Supported Languages
+
+### Single Speaker Text to Speech
+
+| Language | Language Code | Gender  | 
+|----------|---------------|---------|
+| English  | En-IN         | Female  |
+|          | En-IN         | Male    | 
+| Hindi    | Hi-IN         | Female  | 
+|          | Hi-IN         | Male    | 
+| Hindi    | Hi-IN-al      | Female  | 
+| Kannada  | Kn-IN         | Female  | 
+|          | Kn-IN         | Male    | 
+| Tamil    | Ta-IN         | Female  |
+|          | Ta-IN         | Male    |
+| Telugu   | Te-IN         | Female  |
+|          | Te-IN         | Male    |
+| Marathi  | Mr-IN         | Female  | 
+
+### Multispeaker Text to Speech
+
+| Langauge | Language Code          | Gender | Name Tag       |
+|----------|------------------------|--------|----------------|
+| English  | multispeaker-english   | Female | Ella           |
+|          |                        |        | Ruth           |
+|          |                        |        | Casedey        |
+|          |                        |        | April          |
+|          |                        |        | Jenny          |
+|          |                        |        | May            |
+|          |                        |        | Amber          |
+|          |                        |        | Judy           |
+|          |                        |        | Sandy          |
+|          |                        |        | Scarlette      |
+| English  | multispeaker-english   | Male   | John           |
+|          |                        |        | Aron           |
+|          |                        |        | Philip         |
+|          |                        |        | Tom            |
+|          |                        |        | Rudy           |
+|          |                        |        | Brian          |
+|          |                        |        | Alex           |
+|          |                        |        | Stan           |
+|          |                        |        | Brock          |
+|          |                        |        | Mike           |
+| Hindi    | multispeaker-hindi     | Male   | Shaique        |
+|          |                        |        | Jeevan         |
+|          |                        |        | Arvind         |
+|          |                        |        | Achuth         |
+|          |                        |        | Abinay         |
+|          |                        |        | Pradeep        |
+|          |                        |        | Prasant        |
+|          |                        |        | Mahesh         |
+|          |                        |        | Naresh         |
+|          |                        |        | Sreenath       |
+| Hindi    | multispeaker-hindi     | Female | Sandhya        |
+|          |                        |        | Bindu          |
+|          |                        |        | Chitra         |
+|          |                        |        | Supriya        |
+|          |                        |        | Priya          |
+|          |                        |        | Shanvi         |
+|          |                        |        | Uma            |
+|          |                        |        | Saniha         |
+|          |                        |        | Vani           |
+|          |                        |        | Siri           |
+| Kannada  | Multispeaker-kannada   | Female | Gowramma       |
+|          |                        |        | Gowri          |
+|          |                        |        | padma          |
+|          |                        |        | bharathi       |
+|          |                        |        | manjula        |
+|          |                        |        | suchithra      |
+|          |                        |        | sowmya         |
+|          |                        |        | shambavi       |
+|          |                        |        | vidya          |
+|          |                        |        | rashmika       |
+| Kannada  | Multispeaker-kannada   | Male   | Prajwal        |
+|          |                        |        | Prathik        |
+|          |                        |        | arjun          |
+|          |                        |        | bhoregowda     |
+|          |                        |        | Krishna        |
+|          |                        |        | yograj         |
+|          |                        |        | bharath        |
+|          |                        |        | manoj          |
+|          |                        |        | harshavardhan  |
+|          |                        |        | kushal         |
+| Tamil    | Multispeaker-tamil     | Female | shashi         |
+|          |                        |        | amudhavali     |
+|          |                        |        | divyabharathi  |
+|          |                        |        | nethravathi    |
+|          |                        |        | pallavi        |
+|          |                        |        | kavya          |
+|          |                        |        | komalvali      |
+|          |                        |        | sneha          |
+|          |                        |        | sumathi        |
+|          |                        |        | indhuleka      |
+| Tamil    | Multispeaker-tamil     | Male   | Niranjan       |
+|          |                        |        | gopal          |
+|          |                        |        | munigovander   |
+|          |                        |        | vijay          |
+|          |                        |        | ajith          |
+|          |                        |        | lokesh         |
+|          |                        |        | ram            |
+|          |                        |        | senthil        |
+|          |                        |        | srinivas       |
+|          |                        |        | arun           |
+| Telugu   | Multispeaker-telugu    | Female | roja           |
+|          |                        |        | anushka        |
+|          |                        |        | anusha         |
+|          |                        |        | gayathri       |
+|          |                        |        | namrutha       |
+|          |                        |        | chaithra       |
+|          |                        |        | bindhu         |
+|          |                        |        | lakshmi        |
+|          |                        |        | monika         |
+|          |                        |        | lalitha        |
+| Telugu   | Multispeaker-telugu    | Female | ravi teja      |
+|          |                        |        | harish         |
+|          |                        |        | akileshwar     |
+|          |                        |        | jagan          |
+|          |                        |        | santhosh       |
+|          |                        |        | hemath         |
+|          |                        |        | sudhir         |
+|          |                        |        | anirudh        |
+|          |                        |        | nelson         |
+|          |                        |        | bheem          |
+| Marati   | Multispeaker-marathi   | Female | Akshayaa       |
+|          |                        |        | Bhagyashi      |
+|          |                        |        | Bhandishtha    |
+|          |                        |        | Bhavanika      |
+|          |                        |        | Bhavanjali     |
+|          |                        |        | Bhaveeka       |
+|          |                        |        | Bhavyani       |
+|          |                        |        | Dharaa         |
+|          |                        |        | Dharika        |
+|          |                        |        | Dharmi         |
+| Marati   | Multispeaker-marathi   | Male   | Adhrgu         |
+|          |                        |        | Alagumuthu     |
+|          |                        |        | Dhaval         |
+|          |                        |        | Ilesh          |
+|          |                        |        | Mirajkar       |
+|          |                        |        | Namniya        |
+|          |                        |        | Nandedkar      |
+|          |                        |        | Narvel         |
+|          |                        |        | Navjat         |
+|          |                        |        | Nidhra         |
+| Marati   | Multispeaker-malayalam | Female | Jini           |
+|          |                        |        | Pujya          |
+|          |                        |        | Reman          |
+|          |                        |        | Reneeka        |
+|          |                        |        | Shreeya        |
+|          |                        |        | Shrejal        |
+|          |                        |        | Shrena         |
+|          |                        |        | Teja           |
+|          |                        |        | Udaya          |
+|          |                        |        | Uditi          |
+| Marati   | Multispeaker-malayalam | Male   | Upendra        |
+|          |                        |        | Ushapati       |
+|          |                        |        | Utpal          |
+|          |                        |        | Uttam          |
+|          |                        |        | Vachan         |
+|          |                        |        | Vachaspati     |
+|          |                        |        | Vadish         |
+|          |                        |        | Vagindra       |
+|          |                        |        | Vagish         |
+|          |                        |        | Vaidyanaath    |
+| Gujarati | Multispeaker-gujarati  | Female | Reya           |
+|          |                        |        | Ruhi           |
+|          |                        |        | Sahana         |
+|          |                        |        | Samiha         |
+|          |                        |        | Samit          |
+|          |                        |        | Shivangi       |
+|          |                        |        | Suhana         |
+|          |                        |        | Swasti         |
+|          |                        |        | Tanmayi        |
+|          |                        |        | Tishya         |
+| Gujarati | Multispeaker-gujarati  | Male   | Aabharan       |
+|          |                        |        | Aabhas         |
+|          |                        |        | Aabhavannan    |
+|          |                        |        | Aabheer        |
+|          |                        |        | Aacharappan    |
+|          |                        |        | Aacharya       |
+|          |                        |        | Aachman        |
+|          |                        |        | Aachuthan      |
+|          |                        |        | Aadalarasan    |
+|          |                        |        | Aadalarasu     |
+| Nepali   | Multispeaker-Nepali    | Female | Alisha         |
+|          |                        |        | Heena          |
+|          |                        |        | Poudel nishita |
+|          |                        |        | Shirisha       |
+|          |                        |        | Shubhu         |
+|          |                        |        | Soneeya        |
+|          |                        |        | Baijanthi      |
+|          |                        |        | Balapuspika    |
+|          |                        |        | Bhavaroopa     |
+|          |                        |        | Bhavisana      |
+| Nepali   | Multispeaker-Nepali    | Male   | Indradu        |
+|          |                        |        | Indragop       |
+|          |                        |        | Iraianbu       |
+|          |                        |        | Jaysha         |
+|          |                        |        | Juddha         |
+|          |                        |        | Sanani         |
+|          |                        |        | Saudis         |
+|          |                        |        | Sejun          |
+|          |                        |        | Shalva         |
+|          |                        |        | Shraey         |
+| punjabi  | Multispeaker-punjabi   | Female | Hafa           |
+|          |                        |        | Hafeeza        |
+|          |                        |        | Haffafa        |
+|          |                        |        | Hananiah       |
+|          |                        |        | Harlee         |
+|          |                        |        | Harleen        |
+|          |                        |        | Harshida       |
+|          |                        |        | Hartleigh      |
+|          |                        |        | Harva          |
+|          |                        |        | Harveen        |
+| punjabi  | Multispeaker-punjabi   | Male   | Guneet         |
+|          |                        |        | Gurjas         |
+|          |                        |        | Gurkeerat      |
+|          |                        |        | Gurleen        |
+|          |                        |        | Gurman         |
+|          |                        |        | Gurmeet        |
+|          |                        |        | Gurnoor        |
+|          |                        |        | Gursharan      |
+|          |                        |        | Keerat         |
+|          |                        |        | Kirpal         |
+| bengali  | Multispeaker-bengali   | Female | Gaurita        |
+|          |                        |        | Gehna          |
+|          |                        |        | Golapi         |
+|          |                        |        | Grahati        |
+|          |                        |        | Haimanti       |
+|          |                        |        | Indrani        |
+|          |                        |        | Jemisha        |
+|          |                        |        | Jhanvi         |
+|          |                        |        | Jhumpa         |
+|          |                        |        | Jiniya         |
+| bengali  | Multispeaker-bengali   | Male   | Minati         |
+|          |                        |        | Mithin         |
+|          |                        |        | Modan          |
+|          |                        |        | Modanatha      |
+|          |                        |        | Monohar        |
+|          |                        |        | Monojit        |
+|          |                        |        | Mounish        |
+|          |                        |        | Naba           |
+|          |                        |        | Nabakumar      |
+|          |                        |        | Nabhas         |
+
+For more information about Gnani API's Please visit www.gnani.ai or reach out to hello@gnani.ai
+
 ## Prequisites for setting up the API
 
 * Token and accesskey and certificate received from gnani to your registered email id.This is mandatory to access the api.
