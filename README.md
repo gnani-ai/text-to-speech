@@ -8,18 +8,18 @@ This document describes the Gnani’s TTS API that is used to get the TTS audio 
 
 | Language | Language Code | Gender | Sample Text                                                             | Sample Audio |
 |----------|---------------|--------|-------------------------------------------------------------------------|--------------|
-| English  | En-IN         | Female | "Hello. How are you doing?"                                             |             |
-|          | En-IN         | Male   | "I'm fine. Thank you for asking."                                       |              |
-| Hindi    | Hi-IN         | Female | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |              |
+| English  | En-IN         | Female | "Hello. How are you doing?"                                             | ![Sample](samples/en-in-f.wav)            |
+|          | En-IN         | Male   | "I'm fine. Thank you for asking."                                       |  ![Sample](samples/en-in-m.wav)            |
+| Hindi    | Hi-IN         | Female | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |  ![Sample](samples/hi-in-f.wav)            |
 |          | Hi-IN-al      | Female | "नमस्ते मेरा नाम गीता है. क्या यह आपसे बात करने का सही समय है"                  | ![Sample](samples/al.wav)              |
-|          | Hi-IN         | Male   | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |              |
-| Kannada  | Kn-IN         | Female | "ನಾನು ಕರ್ನಾಟಕದ ಧ್ವನಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಿದ್ದೇನೆ"                              |              |
-|          | Kn-IN         | Male   | "ಹಲವು ಸಂಘ ಸಂಸ್ಥೆಗಳು ಖಂಡನಾ ಹೇಳಿಕೆ ನೀಡಿ ಐಎಎಸ್ ಅಧಿಕಾರಿಗೆ ನೈತಿಕ ಬಲ ನೀಡಿದ್ದಾರೆ" |              |
-| Tamil    | Ta-IN         | Female | "அதனால் காதுக்குள் குச்சி பட்ஸ் விட்டு சுத்தம் செய்யக் கூடாது"                     |              |
-|          | Ta-IN         | Male   | "ஒரு கலைஞன் போல் அவர் அந்த ஷாட்டை ஆடுவார்"                                    |              |
-| Telugu   | Te-IN         | Female | " కానీ రామ్ చరణ్ కి హీరో నితిన్ కెరీర్ ప్రస్తుతం అంతగా బాగోలేదు"                            |              |
-|          | Te-IN         | Male   | "ఆ వ్యక్తి ఎవరో గుర్తించి అతడితో టచ్ లోకి వెళ్లాడు"                                    |              |
-| Marathi  | Mr-IN         | Female | "पण मी जे आजपर्यंत करत आलो तेच मला करायचं आहे"                                |              |
+|          | Hi-IN         | Male   | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |  ![Sample](samples/hi-in-m.wav)            |
+| Kannada  | Kn-IN         | Female | "ನಾನು ಕರ್ನಾಟಕದ ಧ್ವನಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಿದ್ದೇನೆ"                              |  ![Sample](samples/kn-in-f.wav)            |
+|          | Kn-IN         | Male   | "ಹಲವು ಸಂಘ ಸಂಸ್ಥೆಗಳು ಖಂಡನಾ ಹೇಳಿಕೆ ನೀಡಿ ಐಎಎಸ್ ಅಧಿಕಾರಿಗೆ ನೈತಿಕ ಬಲ ನೀಡಿದ್ದಾರೆ" |  ![Sample](samples/kn-in-m.wav)            |
+| Tamil    | Ta-IN         | Female | "அதனால் காதுக்குள் குச்சி பட்ஸ் விட்டு சுத்தம் செய்யக் கூடாது"                     |  ![Sample](samples/ta-in-f.wav)            |
+|          | Ta-IN         | Male   | "ஒரு கலைஞன் போல் அவர் அந்த ஷாட்டை ஆடுவார்"                                    |  ![Sample](samples/ta-in-m.wav)            |
+| Telugu   | Te-IN         | Female | " కానీ రామ్ చరణ్ కి హీరో నితిన్ కెరీర్ ప్రస్తుతం అంతగా బాగోలేదు"                            | ![Sample](samples/te-in-f.wav)             |
+|          | Te-IN         | Male   | "ఆ వ్యక్తి ఎవరో గుర్తించి అతడితో టచ్ లోకి వెళ్లాడు"                                    | ![Sample](samples/te-in-m.wav)             |
+| Marathi  | Mr-IN         | Female | "पण मी जे आजपर्यंत करत आलो तेच मला करायचं आहे"                                |  ![Sample](samples/mr-in-f.wav)            |
 
 
 
