@@ -11,7 +11,7 @@ This document describes the Gnani’s TTS API that is used to get the TTS audio 
 | English  | En-IN         | Female | "Hello. How are you doing?"                                             |             |
 |          | En-IN         | Male   | "I'm fine. Thank you for asking."                                       |              |
 | Hindi    | Hi-IN         | Female | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |              |
-|          | Hi-IN-al      | Female | "नमस्ते मेरा नाम गीता है. क्या यह आपसे बात करने का सही समय है"                  |              |
+|          | Hi-IN-al      | Female | "नमस्ते मेरा नाम गीता है. क्या यह आपसे बात करने का सही समय है"                  | ![Sample](samples/al.wav)              |
 |          | Hi-IN         | Male   | "मैं ज्ञानी की ओर से बात कर रहा हूँ"                                          |              |
 | Kannada  | Kn-IN         | Female | "ನಾನು ಕರ್ನಾಟಕದ ಧ್ವನಿಯನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಿದ್ದೇನೆ"                              |              |
 |          | Kn-IN         | Male   | "ಹಲವು ಸಂಘ ಸಂಸ್ಥೆಗಳು ಖಂಡನಾ ಹೇಳಿಕೆ ನೀಡಿ ಐಎಎಸ್ ಅಧಿಕಾರಿಗೆ ನೈತಿಕ ಬಲ ನೀಡಿದ್ದಾರೆ" |              |
